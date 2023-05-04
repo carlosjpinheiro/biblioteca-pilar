@@ -12,7 +12,7 @@ public class biblioServices {
     //usei uma data fixa porém em um código real retornaria a hora do sistema.
     static Date today = new Date(2023,04,05);
 
-    //calcula a multa passando por cada livro locado para determinado cliente, verificando se passou do prazo e fazendo o calculando, adicionando ao montante da multa
+    //calcula a multa passando por cada livro locado para determinado cliente, verificando se passou do prazo e fazendo o calculo, adicionando ao montante da multa
     public static double calculaMulta(clienteModel cliente, livroModel livro, List<livroModel> livrosLista){
 
         double multa = 0;
@@ -52,7 +52,7 @@ public class biblioServices {
 
     }
 
-    //este metodo utiliza o Map que gera uma estrutura key:value, armazenando o os autores nas keys e uma lista dos titulos de suas obras como value
+    //este metodo utiliza o Map que gera uma estrutura key:value, armazenando os autores nas keys e uma lista dos titulos de suas obras como value
     public static Map<String, List<String>> agruparLivrosPorAutor(List<livroModel> livros) {
         Map<String, List<String>> livrosPorAutor = new HashMap<>();
         for (livroModel livro : livros) {
