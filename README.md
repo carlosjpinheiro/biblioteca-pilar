@@ -1,6 +1,6 @@
 # biblioteca-pilar
 
-Respostas das multíplas escolhas
+Respostas das multiplas escolhas
 1) d
 2) c
 3) c
